@@ -2,27 +2,33 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/panlog.ico" type="image/x-icon">
-    <meta name="description" content="Mycake es una tienda en la cual informa los diversos productos que tienen en venta a sus clientes">
-    <meta name="keywords" content="Mycake, pasteles, bocadillos, pastel de chocolate, caracoles, ofertas en pasteles, descuentos en pasteles">
-    <meta name="author" content="Ramos Mesias Mauro Fabrizio">
-    <link rel="icon" href="img/panlog.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/panlog.ico" type="image/x-icon" />
+    <meta name="description" content="Mycake es una tienda en la cual informa los diversos productos que tienen en venta a sus clientes" />
+    <meta name="keywords" content="Mycake, pasteles, bocadillos, pastel de chocolate, caracoles, ofertas en pasteles, descuentos en pasteles" />
+    <meta name="author" content="Ramos Mesias Mauro Fabrizio" />
+    <link rel="icon" href="img/panlog.ico" type="image/x-icon" />
     <title>Mycake</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
         * {
             background-color: transparent;
         }
         
         b>mark {
+            display: inline-block;
+            padding: 5px;
             background-color: green;
             border-radius: 5px;
+        }
+        
+        sup {
+            text-decoration: underline;
         }
         
         p[class="article__text"] {
@@ -95,9 +101,9 @@
             <h2>Por temporada</h2>
             <div class="articles">
                 <article class="article">
-                    <div class="article__img">
+                    <picture class="article__img">
                         <img src="img/torta-chocolate.jpg" alt="Torta de chocolate" />
-                    </div>
+                    </picture>
                     <div class="article__info padre">
                         <h3>Por el día del padre</h3>
                         <p class="article__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nemo rerum delectus dolorem eligendi ab neque fuga dolores repellendus deleniti? Ipsum excepturi a iure unde deleniti ullam! Qui, quasi aspernatur!</p>
@@ -112,8 +118,8 @@
                     <div class="discount article__info">
                         <h3 title="descuento" class="discount__tittle">En descuento %</h3>
                         <p class="article__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nemo rerum delectus dolorem eligendi ab neque fuga dolores repellendus deleniti? Ipsum excepturi a iure unde deleniti ullam! Qui, quasi aspernatur!</p>
-                        <p><em>Los bocaditos y tortas de <span style="color:red; text-decoration: line-through;">$9.99</span></em>
-                            <span><b>, ahora a tan solo <mark><span id="price">5.99</span></mark>
+                        <p><em>Los bocaditos y tortas de <span style="color:red; text-decoration: line-through;">$9.<sup>99</sup></span></em>
+                            <span><b>, ahora a tan solo <mark><span id="price">$5.<sup>99</sup> </span></mark>
                             </b>
                             </span>.<br>Válido hasta el 25 de junio
                             <time datetime="2022-04-29T19:00">19:00</time>
