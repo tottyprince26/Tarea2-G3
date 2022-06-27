@@ -43,7 +43,20 @@
             align-items: center;
            }
 
-           #bocaditos  {
+           #bocaditos{
+            width: 100%;
+            height: 55vh;
+            background-image: url(/img/color-g.jpg);
+            background-position:0% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+
+           #bebidas{
             width: 100%;
             height: 55vh;
             background-image: url(/img/color-g.jpg);
@@ -78,9 +91,6 @@
             /* ancho de las columnas*/
             grid-gap: 15px 20px;
             /* distancia row column*/
-
-            /*justify-content: center;/*
-            /*align-items: center;*/
            }
 
            .divGripS{
@@ -228,6 +238,22 @@
             
            height: 503px;
         } 
+
+        .Divflexlarge {
+            display: flex;
+            flex-wrap: wrap;
+            /*wrap multilinea nowrap una solo linea*/
+            flex-direction: row;
+            /*direccion que toma puede ser en fila o columna*/
+            justify-content: right;
+            /*permite justificar a lo largo de su eje o de su linea*/
+            align-items: right;
+            /*alinear perpendicular*/
+            gap: 2px 30px;
+            /*distancia entre filas y columnas*/
+            
+           height: 730px;
+        } 
           
         .elementoFlex {
             border: 1px solid rgb(0, 0, 0);
@@ -269,10 +295,11 @@
             /*crecimiento del elemento*/
             align-self: center;
             /*alineacion de un elemento*/
-            width: 20%;
+            width: 60%;
 
         }
-    
+
+  
         .pnormal{
                margin: 50px;
                text-align: c;
@@ -377,7 +404,7 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t2.png" alt="icono_cake2" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -385,14 +412,14 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t3.png" alt="icono_cake3" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">40$</h3>
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
       <div class="Producto producto4">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t4.png" alt="icono_cake4" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -400,17 +427,17 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t5.png" alt="icono_cake5" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">35$</h3>
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t6.png" alt="icono_cake6" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">20$</h3>
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
@@ -425,21 +452,19 @@
 
 <section id="bocaditos" >
 
-  <div style="display:inline-block; padding-right: 850px; width: auto;">
-    <div class="Divflex" style="background-color: rgb(25, 181, 134);">
-      <div class="elementoFlex4">
+  <div style="display:inline-block; padding-right: 900px; width: 70%;">
+    <div class="divGripS" style="background-color: rgb(25, 181, 134);">
+      <div class="elemento">
         <h1 style="color: rgb(0, 0, 0);">Hay de dulce y de sal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
       </div>
-      <div class="elementoFlex3">
-        <p  class="pnormal" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
-          sed varius tortor placerat eget.Eu rhoncus eros fringilla.</p>
-      </div>
+      
     </div>
   </div>
 
 </section>
 
-<section style="background-color :rgb(255, 255, 255);">
+<section style="background-color :rgb(200, 42, 42);">
   <h2>Pasteles pequeños, medianos o grandes. </h2>
   
   
@@ -455,7 +480,7 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t2.png" alt="icono_cake2" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -463,14 +488,14 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t3.png" alt="icono_cake3" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
       <div class="Producto producto4">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t4.png" alt="icono_cake4" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -478,7 +503,7 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t5.png" alt="icono_cake5" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -486,7 +511,7 @@
       </div>
 
       <div class="Producto">
-        <img src="/img/t1.png" alt="icono_cake1" />
+        <img src="/img/t6.png" alt="icono_cake6" />
         <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
         <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
         <br>
@@ -508,13 +533,13 @@
 
 <section id="bebidas" >
   <br><br><br><br><br> 
-  <div style="display:inline-block; padding-left: 750px; width: auto;">
-    <div class="Divflex" style="background-color: rgb(255, 255, 255);">
-      <div class="elementoFlex">
-        <h1 style="color: black;">Bebidas</h1>
-        <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
-          sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+  <div style="display:inline-block; padding-right: 900px; width: 70%;">
+    <div class="divGripS" style="background-color: rgb(25, 181, 134);">
+      <div class="elemento">
+        <h1 style="color: rgb(0, 0, 0);">Hay de dulce y de sal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
       </div>
+      
     </div>
   </div>
 
