@@ -225,39 +225,57 @@
             /*alinear perpendicular*/
             gap: 2px 30px;
             /*distancia entre filas y columnas*/
-            border: 1px solid red;
-           height: 500px;
+            
+           height: 503px;
         } 
           
         .elementoFlex {
-            border: 1px solid green;
+            border: 1px solid rgb(0, 0, 0);
             border-radius: 10px;
             padding: 10px;
             min-width: 105px;
             margin-left: 5px;
             margin-top: 5px;
-            width: 50%;
+            /*width: 30%;*/
         }
 
-        .elementoFlex:nth-child(1) {
+        .elementoFlex1 {
             flex-grow: 2;
             /*crecimiento del elemento*/
             align-self: center ;
             /*alineacion de un elemento*/
+            width: 50%;
             
         }
-        .elementoFlex:nth-child(2) {
+        .elementoFlex2 {
             flex-grow:2;
             /*crecimiento del elemento*/
             align-self: center;
             /*alineacion de un elemento*/
+            width: 50%;
+
+        }
+
+        .elementoFlex3 {
+          
+            /*crecimiento del elemento*/
+            align-self: center ;
+            /*alineacion de un elemento*/
             width: 30%;
+            
+        }
+        .elementoFlex4 {
+            flex-grow:2;
+            /*crecimiento del elemento*/
+            align-self: center;
+            /*alineacion de un elemento*/
+            width: 20%;
 
         }
     
         .pnormal{
                margin: 50px;
-               text-align: left;
+               text-align: c;
                 line-height: 1.5;
            }
            
@@ -330,12 +348,12 @@
 
       <section id="pasteles" >
         <div style="display:inline-block; padding-left: 750px; width: auto;">
-          <div class="divGripS" style="background-color: rgb(214, 110, 110);">
-            <div class="elemento">
-              <h1 style="color: black;">Un pastel para cada ocacion</h1>
+          <div class="Divflex" style="background-color: rgb(0, 0, 0);">
+            <div class="elementoFlex1">
+              <h1 style="color: rgb(255, 255, 255);">Un pastel para cada ocacion</h1>
             </div>
-            <div class="elemento">
-              <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
+            <div class="elementoFlex2">
+              <p  class="pnormal" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
                 sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.<br>Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
             </div>
           </div>
@@ -406,16 +424,15 @@
 </section>
 
 <section id="bocaditos" >
-  
-  <div style="display:inline-block; padding-right: 900px; width: auto;">
+
+  <div style="display:inline-block; padding-right: 850px; width: auto;">
     <div class="Divflex" style="background-color: rgb(25, 181, 134);">
-      <div class="elementoFlex">
-        <h1 style="color: rgb(249, 249, 249);">Hay de dulce y de sal, hasta para llevar</h1>
-        
+      <div class="elementoFlex4">
+        <h1 style="color: rgb(0, 0, 0);">Hay de dulce y de sal</h1>
       </div>
-      <div>
-        <p  class="article__text elementoFlex" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
-          sed varius tortor placerat eget.Eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+      <div class="elementoFlex3">
+        <p  class="pnormal" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
+          sed varius tortor placerat eget.Eu rhoncus eros fringilla.</p>
       </div>
     </div>
   </div>
@@ -492,9 +509,9 @@
 <section id="bebidas" >
   <br><br><br><br><br> 
   <div style="display:inline-block; padding-left: 750px; width: auto;">
-    <div class="divGripS" style="background-color: rgb(255, 255, 255);">
-      <div class="elemento">
-        <h1 style="color: black;">Un pastel para cada ocacion</h1>
+    <div class="Divflex" style="background-color: rgb(255, 255, 255);">
+      <div class="elementoFlex">
+        <h1 style="color: black;">Bebidas</h1>
         <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
           sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
       </div>
