@@ -192,7 +192,7 @@
             .Producto{
               background-color: white;
               border-radius: 32px;
-              border: 2px solid rgb(92, 92, 92);
+              border: 2px solid #8e5718;;
               padding: 30px 25px 30px 25px;
               height: 420px; 
               width: 250px; 
@@ -221,6 +221,17 @@
             .botonComprar:hover {
                 color:white;
                 background-color: #AB5300;
+            }
+
+            .botonbuscar{
+              color:#014687;
+              text-decoration: none;
+              background: #ffffff;
+              border: 1px solid #000000;
+              border-radius: 30px;
+              font-size: 20px;
+              padding: 19px 25px;
+              position: absolute;
             }
 
             .Divflex {
@@ -305,6 +316,24 @@
                text-align: c;
                 line-height: 1.5;
            }
+
+           .buscar{
+          position: absolute;
+          padding: 20px;
+          margin: 5px;
+          display: inline-block;
+        }
+
+        .buscar input{
+          width: 240px;
+          height: 40px;
+          font-size:18px;
+          color: black;
+          outline: none;
+          border: 1px solid black;
+          border-radius: 28px;
+          margin: 5px;
+        }
            
     </style>
 
@@ -346,11 +375,27 @@
         <br><br>
         <br><br>
         
+        
       </section>
     
     
       <section id="s2" style="align-content: center;">
+
+      
+        
         <h2>Nuestros Productos </h2>
+
+        <div style="margin: auto; display: flex ; justify-content: center; align-items: center; border: 2px solid black; height: 100px;">
+          <div style="display:inline-block; height: 90px; padding-right: 50px;padding-top: 10px; border: 2px solid  black ; width: 800px;">
+            <div style="" class="buscar"><input type="text" placeholder="buscar producto " required> </div>
+            <div style="position:absolute"> 
+              <a class="botonbuscar" href="#">Buscar</a>
+            </div style> 
+          </div>
+
+          <div style="border: 2px solid  black ; height: 90px; width: 120px;"> </div>
+        </div>
+        
         <hr style="width: 45%;">
         
      <div style="width: 50% ;height:260px; margin: auto ; padding: 10px 10px 20px 350px;overflow: hidden;">
@@ -541,7 +586,39 @@
   </div>
 
 </section>
+<section style="background-color :rgb(255, 255, 255);">
+  <h2>Bebidas Calientes y frias  </h2>
+  <div class="shadown" style="width: 70%; margin: auto; display: flex ; justify-content: center; align-items: center;">
+    <div  style="width: 80%; border: 3px solid black; padding: 10px 50px 10px 60px;">
+     
+      <div class="Producto">
+        <img src="/img/t1.png" alt="icono_cake1" />
+        <h3 style="font-size: 20px; color:#8e5718;" class="font1">taza de Cafe</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">5$</h3>
+        <br>
+        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
+      </div>
 
+      <div class="Producto">
+        <img src="/img/t2.png" alt="icono_cake2" />
+        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Milkshake de fresa</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">5$</h3>
+        <br>
+        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
+      </div>
+
+      <div class="Producto">
+        <img src="/img/t3.png" alt="icono_cake3" />
+        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Milkshake de vainilla</h3>
+        <h3 style="font-size: 23px; color:#764a17;" class="font1">4$</h3>
+        <br>
+        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
+      </div>
+      
+    </div>
+  </div>
+  <br><br><br><br><br>
+</section>
 
 
 
@@ -551,32 +628,6 @@
     
     
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
