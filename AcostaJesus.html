@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +10,13 @@
     <title>Mycake</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-      
-            .parallax{
+        .parallax {
             width: 100%;
             height: 90vh;
             background-image: url(/img/cake11.jpg);
@@ -27,10 +27,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-           }
-           
-
-           #pasteles  {
+        }
+        
+        #pasteles {
             width: 100%;
             height: 55vh;
             background-image: url(/img/pexels.jpg);
@@ -41,49 +40,48 @@
             display: flex;
             justify-content: center;
             align-items: center;
-           }
-
-           #bocaditos{
+        }
+        
+        #bocaditos {
             width: 100%;
             height: 55vh;
             background-image: url(/img/color-g.jpg);
-            background-position:0% 50%;
+            background-position: 0% 50%;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
-           }
-
-           #bebidas{
+        }
+        
+        #bebidas {
             width: 100%;
             height: 55vh;
             background-image: url(/img/bebida2.jpg);
-            background-position:left ;
-            background-size:60%;
+            background-position: left;
+            background-size: 60%;
             background-repeat: no-repeat;
             background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
-           }
-
-           .fondoimge {
-                opacity: 0.7;
-                filter: alpha(opacity=20); /* For IE8 and earlier */
-            }
-
-
-            .divGrip{
-              width: 100%;
-              height: 90vh;
+        }
+        
+        .fondoimge {
+            opacity: 0.7;
+            filter: alpha(opacity=20);
+            /* For IE8 and earlier */
+        }
+        
+        .divGrip {
+            width: 100%;
+            height: 90vh;
             background-color: black;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-
             display: grid;
             grid-template-rows: 160px 150px 90px;
             /*altura de las filas*/
@@ -91,9 +89,9 @@
             /* ancho de las columnas*/
             grid-gap: 15px 20px;
             /* distancia row column*/
-           }
-
-           .divGripS{
+        }
+        
+        .divGripS {
             width: 100%;
             height: 55vh;
             display: grid;
@@ -114,127 +112,121 @@
             margin-top: 5px;
             justify-content: center;
             align-items: center;
-           }
-
-           .elemento:nth-child(1) {
+        }
+        
+        .elemento:nth-child(1) {
             grid-row: 1/4;
             grid-column: 2/3;
             margin-top: 8px;
             margin-bottom: 2px;
             padding-top: 80px;
-
-            
-            }
-
-            .elemento:nth-child(2) {
+        }
+        
+        .elemento:nth-child(2) {
             grid-row: 4/4;
             grid-column: 2/3;
-            padding: 170px 50px 60px 680px; 
-            }
-
-            .elemento:nth-child(3) {
+            padding: 170px 50px 60px 680px;
+        }
+        
+        .elemento:nth-child(3) {
             grid-row: 1/2;
             grid-column: 3/4;
-            padding: 7px 5px 0px 6px; 
-            }
-
-            .elemento:nth-child(4) {
+            padding: 7px 5px 0px 6px;
+        }
+        
+        .elemento:nth-child(4) {
             grid-row: 1;
             grid-column: 1;
-            
-            }
-            .elemento:nth-child(5) {
+        }
+        
+        .elemento:nth-child(5) {
             grid-row: 2;
             grid-column: 1/3;
-            
-            }
-            
-            
-            .boton{
-              color:rgb(248, 248, 248);
-              text-decoration: none;
-              background: #fb0000;
-              border-radius: 30px;
-              font-size: 20px;
-              padding: 19px 25px;
-              position: relative;
-            }
-            .boton:hover {
-              color: rgb(207, 0, 0);
-                background-color: rgb(228, 228, 228);
-            }
-
-
-            .card{
-              background-color: white;
-              border-radius: 32px;
-              border: 2px solid rgb(92, 92, 92);
-              padding: 30px 25px 30px 25px;
-              height: 200px; 
-              width: 120px; 
-              display: inline-block;
-              margin-right: 25px;
-              margin-top: 10px;
-            }
-
-            .card:hover{
-              border-color: #fb0000;
-
-            }
-
-            p::first-letter {
-              font-family: 'Dancing Script';
-              font-size: 28px;
-              
-
-            }
-
-            .Producto{
-              background-color: white;
-              border-radius: 32px;
-              border: 2px solid #8e5718;;
-              padding: 30px 25px 30px 25px;
-              height: 420px; 
-              width: 250px; 
-              display: inline-block;
-              margin-right: 10px;
-              margin-left: 30px;
-              margin-top: 10px;
-            }
-
-
-            .font1{
-              /*font-family: 'Farsan', cursive;*/
-              font-family: 'Work Sans', sans-serif;
-            }
-            
-            .botonComprar{
-              color:#c38b4a;
-              text-decoration: none;
-              background: #ffffff;
-              border: 1px solid #AB5300;
-              border-radius: 30px;
-              font-size: 20px;
-              padding: 19px 25px;
-              position: relative;
-            }
-            .botonComprar:hover {
-                color:white;
-                background-color: #AB5300;
-            }
-
-            .botonbuscar{
-              color:#014687;
-              text-decoration: none;
-              background: #ffffff;
-              border: 1px solid #000000;
-              border-radius: 30px;
-              font-size: 20px;
-              padding: 19px 25px;
-              position: absolute;
-            }
-
-            .Divflex {
+        }
+        
+        .boton {
+            color: rgb(248, 248, 248);
+            text-decoration: none;
+            background: #fb0000;
+            border-radius: 30px;
+            font-size: 20px;
+            padding: 19px 25px;
+            position: relative;
+        }
+        
+        .boton:hover {
+            color: rgb(207, 0, 0);
+            background-color: rgb(228, 228, 228);
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 32px;
+            border: 2px solid rgb(92, 92, 92);
+            padding: 30px 25px 30px 25px;
+            height: 200px;
+            width: 120px;
+            display: inline-block;
+            margin-right: 25px;
+            margin-top: 10px;
+        }
+        
+        .card:hover {
+            border-color: #fb0000;
+        }
+        
+        p::first-letter {
+            font-family: 'Dancing Script';
+            font-size: 28px;
+        }
+        
+        .Producto {
+            background-color: white;
+            border-radius: 32px;
+            border: 2px solid #8e5718;
+            ;
+            padding: 30px 25px 30px 25px;
+            height: 420px;
+            width: 250px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        
+        .font1 {
+            /*font-family: 'Farsan', cursive;*/
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .botonComprar {
+            color: #c38b4a;
+            text-decoration: none;
+            background: #ffffff;
+            border: 1px solid #AB5300;
+            border-radius: 30px;
+            font-size: 20px;
+            padding: 19px 25px;
+            position: relative;
+        }
+        
+        .botonComprar:hover {
+            color: white;
+            background-color: #AB5300;
+        }
+        
+        .botonbuscar {
+            color: #014687;
+            text-decoration: none;
+            background: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 30px;
+            font-size: 20px;
+            padding: 19px 25px;
+            position: absolute;
+        }
+        
+        .Divflex {
             display: flex;
             flex-wrap: wrap;
             /*wrap multilinea nowrap una solo linea*/
@@ -246,10 +238,9 @@
             /*alinear perpendicular*/
             gap: 2px 30px;
             /*distancia entre filas y columnas*/
-            
-           height: 503px;
-        } 
-
+            height: 503px;
+        }
+        
         .Divflexlarge {
             display: flex;
             flex-wrap: wrap;
@@ -262,10 +253,9 @@
             /*alinear perpendicular*/
             gap: 2px 30px;
             /*distancia entre filas y columnas*/
-            
-           height: 730px;
-        } 
-          
+            height: 730px;
+        }
+        
         .elementoFlex {
             border: 1px solid rgb(0, 0, 0);
             border-radius: 10px;
@@ -275,116 +265,95 @@
             margin-top: 5px;
             /*width: 30%;*/
         }
-
+        
         .elementoFlex1 {
             flex-grow: 2;
-            /*crecimiento del elemento*/
-            align-self: center ;
-            /*alineacion de un elemento*/
-            width: 50%;
-            
-        }
-        .elementoFlex2 {
-            flex-grow:2;
             /*crecimiento del elemento*/
             align-self: center;
             /*alineacion de un elemento*/
             width: 50%;
-
         }
-
-        .elementoFlex3 {
-          
+        
+        .elementoFlex2 {
+            flex-grow: 2;
             /*crecimiento del elemento*/
-            align-self: center ;
+            align-self: center;
+            /*alineacion de un elemento*/
+            width: 50%;
+        }
+        
+        .elementoFlex3 {
+            /*crecimiento del elemento*/
+            align-self: center;
             /*alineacion de un elemento*/
             width: 30%;
-            
         }
+        
         .elementoFlex4 {
-            flex-grow:2;
+            flex-grow: 2;
             /*crecimiento del elemento*/
             align-self: center;
             /*alineacion de un elemento*/
             width: 60%;
-
         }
-
-  
-        .pnormal{
-               margin: 50px;
-               text-align: c;
-                line-height: 1.5;
-           }
-
-           .buscar{
-          position: absolute;
-          padding: 20px;
-          margin: 5px;
-          display: inline-block;
+        
+        .pnormal {
+            margin: 50px;
+            text-align: c;
+            line-height: 1.5;
         }
-
-        .buscar input{
-          width: 240px;
-          height: 40px;
-          font-size:18px;
-          color: black;
-          outline: none;
-          border: 1px solid black;
-          border-radius: 28px;
-          margin: 5px;
+        
+        .buscar {
+            position: absolute;
+            padding: 20px;
+            margin: 5px;
+            display: inline-block;
         }
-           
+        
+        .buscar input {
+            width: 240px;
+            height: 40px;
+            font-size: 18px;
+            color: black;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 28px;
+            margin: 5px;
+        }
     </style>
 
 
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="container bar">
-        <a href="index.html"
-          ><img class="bar__img" src="img/logo.png" alt="logo"
-        /></a>
-        <nav>
-          <ul class="menu">
-            <li><a class="menu__link" href="RamosMauro.html">Inicio</a></li>
-            <li><a class="menu__link" href="#">Productos</a></li>
-            <li><a class="menu__link" href="#">Nosotros</a></li>
-            <li><a class="menu__link" href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container bar">
+            <a href="index.html"><img class="bar__img" src="img/logo.png" alt="logo" /></a>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menu__link" href="RamosMauro.html">Inicio</a></li>
+                    <li><a class="menu__link" href="#">Productos</a></li>
+                    <li><a class="menu__link" href="#">Nosotros</a></li>
+                    <li><a class="menu__link" href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main >
-      <section class="parallax" style="background-color: black;">
-       <h3></h3>
-        <div class="divGrip fondoimge">
-          
-          <div class="elemento">
-            <h1 >El límite es tu imaginación</h1>
-            <p  style="color: white">Las mejores tortas y bocaditos en un solo lugar </p>
-          </div>
-          <div class="elemento">
-            <a class="boton"  href="#s2"> Descubre más </a>
-          </div>
-          
-        </div>
-     
-        <br><br>
-        <br><br>
-        
-        
-      </section>
-    
-    
-      <section id="s2" style="align-content: center;">
+    <main>
+        <section class="parallax" style="background-color: black;">
+            <h3></h3>
+            <div class="divGrip fondoimge">
 
-      
-        
-        <h2>Nuestros Productos </h2>
+                <div class="elemento">
+                    <h1>El límite es tu imaginación</h1>
+                    <p style="color: white">Las mejores tortas y bocaditos en un solo lugar </p>
+                </div>
+                <div class="elemento">
+                    <a class="boton" href="#s2"> Descubre más </a>
+                </div>
 
+<<<<<<< HEAD
         <div style="margin: auto; display: flex ; justify-content: center; align-items: center; border: 2px solid black; height: 100px;">
           <div style="display:inline-block; height: 90px; padding-right: 50px;padding-top: 10px; border: 2px solid  black ; width: 800px;">
             <div style="" class="buscar"><input type="text" placeholder="buscar producto " required> </div>
@@ -423,16 +392,35 @@
           <div class="Divflex" style="background-color: rgb(0, 0, 0);">
             <div class="elementoFlex1">
               <h1 style="color: rgb(255, 255, 255);">Un pastel para cada ocacion</h1>
+=======
+>>>>>>> 0908741c9f25d9c38944f8910ac9ccf3aeb623a2
             </div>
-            <div class="elementoFlex2">
-              <p  class="pnormal" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
-                sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.<br>Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
-            </div>
-          </div>
-        </div>
-      
-      </section>
 
+            <br><br>
+            <br><br>
+
+
+        </section>
+
+
+        <section id="s2" style="align-content: center;">
+
+
+
+            <h2>Nuestros Productos </h2>
+
+            <div style="margin: auto; display: flex ; justify-content: center; align-items: center; border: 2px solid black; height: 100px;">
+                <div style="display:inline-block; height: 90px; padding-right: 50px;padding-top: 10px; border: 2px solid  black ; width: 800px;">
+                    <div class="buscar"><input type="text" placeholder="buscar producto " required> </div>
+                    <div style="position:absolute">
+                        <a class="botonbuscar" href="#">Buscar</a>
+                    </div style>
+                </div>
+
+                <div style="border: 2px solid  black ; height: 90px; width: 120px;"> </div>
+            </div>
+
+<<<<<<< HEAD
 <section style="background-color :rgb(255, 255, 255);">
   <h2>Pasteles pequeños, medianos o grandes. </h2>
   
@@ -447,66 +435,53 @@
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
+=======
+            <hr style="width: 45%;">
+>>>>>>> 0908741c9f25d9c38944f8910ac9ccf3aeb623a2
 
-      <div class="Producto">
-        <img src="/img/t2.png" alt="icono_cake2" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
+            <div style="width: 50% ;height:260px; margin: auto ; padding: 10px 10px 20px 350px;overflow: hidden;">
 
-      <div class="Producto">
-        <img src="/img/t3.png" alt="icono_cake3" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">40$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
-      <div class="Producto producto4">
-        <img src="/img/t4.png" alt="icono_cake4" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
+                <a href="#pasteles">
+                    <div class="card">
+                        <img src="/img/Color-Cake.png" alt="icono_cake" />
+                        <h3 class="font1" style="color: rgb(0, 0, 0);font-style: italic ; font-size:  21px; padding: 2px;">Pasteles</h3>
+                    </div>
+                </a>
+                <a href="#bocaditos">
+                    <div class="card">
+                        <img src="/img/snack.png" alt="icono_snack" />
+                        <h3 class="font1" style="color: rgb(0, 0, 0);font-style: italic ; font-size:  21px; padding: 2px;">Bocaditos</h3>
+                    </div>
+                </a>
 
-      <div class="Producto">
-        <img src="/img/t5.png" alt="icono_cake5" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">35$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
+                <a href="">
+                    <div class="card">
+                        <img src="/img/Milkshake.png" alt="icono_bebida" />
+                        <h3 class="font1" style="color: rgb(0, 0, 0);font-style: italic ; font-size:  21px; padding: 2px;">Bebidas</h3>
+                    </div>
+                </a>
+            </div>
+            <br><br><br><br><br>
 
-      <div class="Producto">
-        <img src="/img/t6.png" alt="icono_cake6" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">20$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
-      
-      
-   
-    
-    </div>
-  </div>
-  <br><br><br><br><br>
-</section>
+        </section>
 
-<section id="bocaditos" >
+        <section id="pasteles">
+            <div style="display:inline-block; padding-left: 750px; width: auto;">
+                <div class="Divflex" style="background-color: rgb(0, 0, 0);">
+                    <div class="elementoFlex1">
+                        <h1 style="color: rgb(255, 255, 255);">Un pastel para cada ocacion</h1>
+                    </div>
+                    <div class="elementoFlex2">
+                        <p class="pnormal" style="color: rgb(255, 255, 255)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros
+                            fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.<br>Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante
+                            sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+                    </div>
+                </div>
+            </div>
 
-  <div style="display:inline-block; padding-right: 900px; width: 70%;">
-    <div class="divGripS" style="background-color: rgb(146, 199, 183);">
-      <div class="elemento">
-        <h1 style="color: rgb(0, 0, 0);">Hay de dulce y de sal</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
-      </div>
-      
-    </div>
-  </div>
+        </section>
 
+<<<<<<< HEAD
 </section>
 
 <section style="background-color :rgb(255, 255, 255);">
@@ -570,21 +545,196 @@
   </div>
   <br><br><br><br><br>
 </section>
+=======
+        <section style="background-color :rgb(255, 255, 255);">
+            <h2>Pasteles pequeños, medianos o grandes. </h2>
+>>>>>>> 0908741c9f25d9c38944f8910ac9ccf3aeb623a2
+
+
+            <div class="shadown" style="width: 70%; margin: auto; display: flex ; justify-content: center; align-items: center;">
+                <div style="width: 80%; border: 3px solid black; padding: 10px 50px 10px 60px;">
+
+                    <div class="Producto">
+                        <img src="/img/t1.png" alt="icono_cake1" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t2.png" alt="icono_cake2" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t3.png" alt="icono_cake3" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">40$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+                    <div class="Producto producto4">
+                        <img src="/img/t4.png" alt="icono_cake4" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t5.png" alt="icono_cake5" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">35$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t6.png" alt="icono_cake6" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">20$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
 
 
 
-<section id="bebidas" >
-  <br><br><br><br><br> 
-  <div style="display:inline-block; padding-left: 900px; width: 90%;">
-    <div class="divGripS" style="background-color: rgb(244, 186, 98);">
-      <div class="elemento">
-        <h1 style="color: rgb(255, 255, 255);">Bebidas</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
-      </div>
-      
-    </div>
-  </div>
 
+                </div>
+            </div>
+            <br><br><br><br><br>
+        </section>
+
+        <section id="bocaditos">
+
+            <div style="display:inline-block; padding-right: 900px; width: 70%;">
+                <div class="divGripS" style="background-color: rgb(146, 199, 183);">
+                    <div class="elemento">
+                        <h1 style="color: rgb(0, 0, 0);">Hay de dulce y de sal</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section style="background-color :rgb(200, 42, 42);">
+            <h2>Bocaditos Por unidad o por Mayor </h2>
+
+
+            <div class="shadown" style="width: 80%; margin: auto; border: 3px solid black; display: flex ; justify-content: center; align-items: center;">
+                <div style="width: 70%; border: 3px solid black; padding: 10px 50px 10px 60px;">
+
+                    <div class="Producto">
+                        <img src="/img/t1.png" alt="icono_cake1" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t2.png" alt="icono_cake2" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t3.png" alt="icono_cake3" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+                    <div class="Producto producto4">
+                        <img src="/img/t4.png" alt="icono_cake4" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t5.png" alt="icono_cake5" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t6.png" alt="icono_cake6" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Petite Inglesa Clasica</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">25$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <br><br><br><br><br>
+        </section>
+
+
+
+        <section id="bebidas">
+            <br><br><br><br><br>
+            <div style="display:inline-block; padding-left: 900px; width: 90%;">
+                <div class="divGripS" style="background-color: rgb(244, 186, 98);">
+                    <div class="elemento">
+                        <h1 style="color: rgb(255, 255, 255);">dsdsdsdsd</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est velit, accumsan fermentum mollis eu, cursus quis ligula. Phasellus elementum scelerisque rhoncus.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section style="background-color :rgb(255, 255, 255);">
+            <h2>Bebidas Calientes y frias </h2>
+            <div class="shadown" style="width: 70%; margin: auto; display: flex ; justify-content: center; align-items: center;">
+                <div style="width: 80%; border: 3px solid black; padding: 10px 50px 10px 60px;">
+
+                    <div class="Producto">
+                        <img src="/img/t1.png" alt="icono_cake1" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">taza de Cafe</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">5$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t2.png" alt="icono_cake2" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Milkshake de fresa</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">5$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                    <div class="Producto">
+                        <img src="/img/t3.png" alt="icono_cake3" />
+                        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Milkshake de vainilla</h3>
+                        <h3 style="font-size: 23px; color:#764a17;" class="font1">4$</h3>
+                        <br>
+                        <a style="margin: 2px 50px 2px 50px;" class="botonComprar" href="#s2">Comprar</a>
+                    </div>
+
+                </div>
+            </div>
+            <br><br><br><br><br>
+        </section>
+
+<<<<<<< HEAD
 </section>
 <section style="background-color :rgb(255, 255, 255);">
   <h2>Bebidas Calientes y frias  </h2>
@@ -598,115 +748,63 @@
         <br>
         <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
       </div>
-
-      <div class="Producto">
-        <img src="/img/b1.png" alt="icono_bebida2" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Café de vainilla</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">5$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
-
-      <div class="Producto">
-        <img src="/img/b1.png" alt="icono_bebida3" />
-        <h3 style="font-size: 20px; color:#8e5718;" class="font1">Café de vainilla</h3>
-        <h3 style="font-size: 23px; color:#764a17;" class="font1">4$</h3>
-        <br>
-        <a style="margin: 2px 50px 2px 50px;" class="botonComprar"  href="#s2">Comprar</a>     
-      </div>
-      
-    </div>
-  </div>
-  <br><br><br><br><br>
-</section>
+=======
+>>>>>>> 0908741c9f25d9c38944f8910ac9ccf3aeb623a2
 
 
 
 
-    
 
-    
-    
+
+
     </main>
 
 
 
     <footer class="footer" style="color: #414141">
-      <div class="container distribution" style="padding: 15px 0">
-        <address class="f__text">
+        <div class="container distribution" style="padding: 15px 0">
+            <address class="f__text">
           Plaza lago km 6.5 via Puntilla <br />
           Samborondón, Guayaquil <br />
         </address>
 
-        <div>
-          <p style="margin: 0" class="f__text"><small>Grupo #3</small></p>
-          <p style="margin: 0" class="f__text">
-            &copy; Copyright Pastelería 2022
-          </p>
-        </div>
+            <div>
+                <p style="margin: 0" class="f__text"><small>Grupo #3</small></p>
+                <p style="margin: 0" class="f__text">
+                    &copy; Copyright Pastelería 2022
+                </p>
+            </div>
 
-        <div class="social">
-          <a class="social-network" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-facebook"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#414141"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+            <div class="social">
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
                 d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
               />
             </svg>
-          </a>
+                </a>
 
-          <a class="social-network" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-twitter"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#414141"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
                 d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
               />
             </svg>
-          </a>
+                </a>
 
-          <a class="social-network" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-instagram"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#414141"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+                <a class="social-network" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#414141" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <rect x="4" y="4" width="16" height="16" rx="4" />
               <circle cx="12" cy="12" r="3" />
               <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
             </svg>
-          </a>
+                </a>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
