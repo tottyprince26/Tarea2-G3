@@ -19,8 +19,35 @@
             .parallax{
             width: 100%;
             height: 90vh;
-            background-image: url(/img/fondo.jpg);
+            background-image: url(/img/cake11.jpg);
             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           
+
+           #pasteles  {
+            width: 100%;
+            height: 55vh;
+            background-image: url(/img/pexels.jpg);
+            background-position: 40% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+
+           #bocaditos  {
+            width: 100%;
+            height: 55vh;
+            background-image: url(/img/color-g.jpg);
+            background-position:0% 50%;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -35,7 +62,7 @@
             }
 
 
-            .div1{
+            .divGrip{
               width: 100%;
               height: 90vh;
             background-color: black;
@@ -43,7 +70,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            
+
             display: grid;
             grid-template-rows: 150px 150px 90px;
             /*altura de las filas*/
@@ -55,9 +82,22 @@
             /*justify-content: center;/*
             /*align-items: center;*/
            }
+
+           .divGripS{
+            width: 100%;
+            height: 55vh;
+            display: grid;
+            border-top:  1px solid black;
+            grid-template-rows: 10px 90px;
+            /*altura de las filas*/
+            grid-template-columns: 10% 70% 30%;
+            /* ancho de las columnas*/
+            grid-gap: 15px 20px;
+            /* distancia row column*/
+           } 
           
            .elemento {
-            border: 1px solid rgb(206, 247, 3);
+            border: 1px solid rgb(8, 9, 1);
             border-radius: 10px;
             padding: 10px;
             min-width: 105px;
@@ -70,7 +110,6 @@
            .elemento:nth-child(1) {
             grid-row: 2/4;
             grid-column: 2/3;
-            
             margin-top: 10px;
             
             }
@@ -78,8 +117,13 @@
             .elemento:nth-child(2) {
             grid-row: 4/4;
             grid-column: 2/3;
-            
             padding: 170px 50px 60px 680px; 
+            }
+
+            .elemento:nth-child(3) {
+            grid-row: 1/2;
+            grid-column: 3/4;
+            padding: 7px 5px 0px 6px; 
             }
 
             
@@ -102,13 +146,28 @@
             .card{
               background-color: white;
               border-radius: 32px;
-              border: 3px solid rgb(92, 92, 92);
-              padding: 50px;
-              height: 150px; 
+              border: 2px solid rgb(92, 92, 92);
+              padding: 30px 25px 30px 25px;
+              height: 200px; 
               width: 120px; 
               display: inline-block;
               margin-right: 25px;
+              margin-top: 10px;
             }
+
+            .card:hover{
+              border-color: #fb0000;
+
+            }
+
+            p::first-letter {
+              font-family: 'Dancing Script';
+              font-size: 28px;
+              
+
+            }
+
+            
     </style>
 
 
@@ -122,7 +181,7 @@
         /></a>
         <nav>
           <ul class="menu">
-            <li><a class="menu__link" href="#">Inicio</a></li>
+            <li><a class="menu__link" href="RamosMauro.html">Inicio</a></li>
             <li><a class="menu__link" href="#">Productos</a></li>
             <li><a class="menu__link" href="#">Nosotros</a></li>
             <li><a class="menu__link" href="#">Contacto</a></li>
@@ -134,7 +193,7 @@
     <main >
       <section class="parallax" style="background-color: black;">
        <h3></h3>
-        <div class="div1 fondoimge">
+        <div class="divGrip fondoimge">
           
           <div class="elemento">
             <h1 >El límite es tu imaginación</h1>
@@ -149,37 +208,97 @@
      
         <br><br>
         <br><br>
-        <br>
-        <br><br><br><br><br><br>
-
+        
       </section>
     
     
       <section id="s2" style="align-content: center;">
-        <h2>Nuestro menu </h2>
+        <h2>Nuestros Productos </h2>
+        <hr style="width: 45%;">
         
-        
-     <div style="width: 50% ;height:260px; margin: auto ;border: 9px solid rgb(0, 0, 0); padding: 10px 10px 20px 200px;">
-          
-          <a href=""><div class="card">
-          <h>ffff</h>
+     <div style="width: 50% ;height:260px; margin: auto ; padding: 10px 10px 20px 350px;overflow: hidden;">
+         
+          <a href="#pasteles"><div class="card">
+            <img src="/img/Color-Cake.png" alt="icono_cake" />
+          <h3 style="color: rgb(0, 0, 0);font-style: italic ; font-family: 'Roboto', sans-serif; font-size:  21px; padding: 2px;" >Pasteles</h3>
           </div></a>
           <a href=""><div class="card">
-            <h>ffff</h>
+            <img src="/img/snack.png" alt="icono_snack"/>
+            <h3 style="color: rgb(0, 0, 0);font-style: italic ; font-family: 'Roboto', sans-serif; font-size:  21px; padding: 2px;" >Bocaditos</h3>
             </div></a>
 
             <a href=""><div class="card">
-              <h>ffff</h>
+              <img src="/img/Milkshake.png" alt="icono_bebida"/>
+              <h3 style="color: rgb(0, 0, 0);font-style: italic ; font-family: 'Roboto', sans-serif; font-size:  21px; padding: 2px;" >Bebidas</h3>
               </div></a>
      </div>
      <br><br><br><br><br>
       
       </section>
 
-      <section id="pasteles" style="background-color: black;">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+      <section id="pasteles" >
+        <br><br><br><br><br> 
+        
+        <div style="display:inline-block; padding-left: 750px; width: auto;">
+          <div class="divGripS" style="background-color: rgb(255, 255, 255);">
+            <div class="elemento">
+              <h1 style="color: black;">Un pastel para cada ocacion</h1>
+              <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
+                sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+            </div>
+          </div>
+        </div>
+      
       </section>
+
+<section style="background-color :rgb(62, 198, 206);">
+  <h2>Pasteles pequeños, medianos o grandes. </h2>
+  
+  <div class="shadown">
+
+  </div>
+  
+  <br><br><br><br><br><br><br><br><br><br>
+</section>
+
+<section id="bocaditos" >
+  <br><br><br><br><br> 
+  
+  <div style="display:inline-block; padding-right: 750px; width: auto;">
+    <div class="divGripS" style="background-color: rgb(255, 255, 255);">
+      <div class="elemento">
+        <h1 style="color: black;">Un pastel para cada ocacion</h1>
+        <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
+          sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section style="background-color :black;">
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+
+<section id="pasteles" >
+  <br><br><br><br><br> 
+  <div style="display:inline-block; padding-left: 750px; width: auto;">
+    <div class="divGripS" style="background-color: rgb(255, 255, 255);">
+      <div class="elemento">
+        <h1 style="color: black;">Un pastel para cada ocacion</h1>
+        <p  class="article__text" style="color: rgb(0, 0, 0)">Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus,
+          sed varius tortor placerat eget. Fusce a finibus massa.Aliquam molestie est ac dui accumsan, eu rhoncus eros fringilla. Proin sed interdum felis. Nulla cursus bibendum lectus, sed varius tortor placerat eget. Fusce a finibus massa.Integer aliquet elit sed fringilla ornare. Nam at nunc efficitur purus iaculis varius. Nunc ante sapien, tempor a commodo ut, sollicitudin in risus. Sed id odio eu metus dapibus rhoncus. Morbi gravida sodales consectetur.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
     
 
     
