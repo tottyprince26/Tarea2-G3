@@ -12,89 +12,89 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
-    <style>
-        #contactenos {
-            width: 70%;
-            margin: 35px auto;
-            -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
-            -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
-            box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
-            padding: 2rem;
-            border-radius: .5rem;
-        }
-        
-        .comunicacion img {
-            width: 40px;
-            height: 40px;
-        }
-        
-        .comunicacion {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5px;
-        }
-        
-        #canales {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .campo {
-            margin: 15px auto;
-        }
-        
-        .label {
-            font-size: 25px;
-            font-weight: 700;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .field {
-            flex-direction: column;
-            font-size: 20px;
-            background-color: #d9b897;
-            border: 0;
-            border-bottom: 2.5px solid #AB5300;
-            padding: 15px;
-            width: 50%;
-            border-radius: 5px;
-            margin-left: 25px;
-            resize: none;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        [class="field"] {
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        div[class~="especial"] {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        label[class$="je"] {
-            margin-top: 15px;
-        }
-        
-        textarea[class^="area"] {
-            width: 800px;
-        }
-        
-        .margen {
-            margin-bottom: 25px;
-        }
-    </style>
 </head>
+<style>
+    #contactenos{
+    width: 70%;
+    margin:auto;
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    margin: auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.comunicacion img{
+    width:40px;
+    height: 40px;
+}
+.comunicacion{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+#canales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    gap: 10px 30px;
+    height: 500px;
+
+}
+
+
+.form-contact {
+    background-color: #B3773B;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    transform:translate(-50%, -50%) ;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+}
+.contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: black;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact label, .contact input, .contact textarea{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.contact label{
+
+    font-weight: 700;
+}
+.contact input:not([type='submit']), .contact textarea{
+    border: none;
+    background: #d9b897;
+    border-bottom: 5px solid rgb(150, 53, 53);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+}
+.contact textarea{
+    min-height: 100px;
+}
+
+.banner {
+    background-image: url(../img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+</style>
 
 <body>
 
@@ -113,56 +113,46 @@
 
     </header>
 
-    <main id="contactenos">
-        <h1 style="color: #000;">Contáctenos</h1>
-        <div id="canales" style="background-color:#d9b897; width:80%; height:400px; margin:0 auto; border-radius: 5px;">
-            <div class="comunicacion">
-                <h2>Email</h2>
-                <img src="img/correo1.png" alt="correo" />
-                <p><b>Escribenos</b></p>
-                <br/><a class="button" href="#">contacto@Mycake.com.exe</a>
-            </div>
-            <div class="comunicacion">
-                <h2>Llámanos</h2>
-                <img src="img/llamadas.png" alt="llamadas" />
-                <p><b>Telefono: 04258934 </b></p>
-                <br/><a class="button" href="#">Llamada</a>
-            </div>
-            <div class="comunicacion">
-                <h2>Mensaje</h2>
-                <img src="img/chat.png" alt="chat" />
-                <p><b>Chat</b></p>
-                <br/><a class="button" href="#">Chat</a>
-            </div>
-        </div>
-        <form class="contact" style="margin-top: 50px;">
-            <fieldset style="border: none; text-align: center;">
-                <legend style="font-size: 35px; margin-bottom: 25px;">Recomendaciones</legend>
-                <div class="campo">
-                    <label class="label" for="nombres">Nombre</label>
-                    <input class="field" type="text" name="nombres" id="nombres" placeholder="Ingresa aqui tu nombre">
-                </div>
-
-                <div class="campo">
-                    <label class="label" for="correo">Correo &ThickSpace;</label>
-                    <input class="field" type="text" name="correo" id="correo" placeholder="ejemplo@email.com">
-                </div>
-
-                <div class="campo">
-                    <label class="label" for="celular">Teléfono</label>
-                    <input class="field" type="text" name="celular" id="celular" placeholder="Mensajes directos a tu Whatsaap">
-                </div>
-
-                <div class="especial margen">
-                    <label class="label mensaje" for="mensaje">Mensaje</label>
-                    <textarea style="height: 150px; " ; class="area field" name="mensaje" id="mensaje" placeholder="Dejanos tus recomendaciones o sugerencias"></textarea>
-                </div>
-                <br/><a class="button" href="#">Enviar</a>
-            </fieldset>
-
-
-        </form>
-    </main>
+    <div>  </div>
+        <section id="contactenos">
+            <h2>Contáctenos</h2>
+                <div id="canales" style=" background-color:#CE9D6C; align-content: center width: 80% ;height:400px; margin: auto ;">
+                    <div class="comunicacion">
+                        <h3 >Email</h3>
+                        <img src="img/correo1.png" alt="correo"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Escribenos</b></p>
+                        <br/><a class="button" href="#" >contacto@Mycake.com.exe</a>
+                    </div>
+                    <div class="comunicacion">
+                        <h3>Llámanos</h3>
+                        <img src="img/llamadas.png" alt="llamadas"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Telefono: 04258934 </b></p>
+                        <br/><a class="button" href="#" >Llamada</a>
+                    </div>
+                    <div class="comunicacion">
+                        <h3>Mensaje</h3>
+                        <img src="img/chat.png" alt="chat"/>
+                        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Chat</b></p>
+                        <br/><a class="button" href="#" >Chat</a>
+                    </div>
+                </div>  
+                <form action="" class="contact">
+                    <h2>Recomendaciones</h2>
+                    <label for="nombres">Nombre</label>
+                    <input type="text" name="nombres" id="nombres">
+        
+                    <label for="correo">Correo</label>
+                    <input type="text" name="correo" id="correo">
+        
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular">
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <br/><a class="button" href="#" >Enviar</a>
+        
+                </form>
+        </section>
 
 
     <footer class="footer" style="color: #414141">
